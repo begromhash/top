@@ -15,7 +15,7 @@ jobs:
     - name: Auth ngrok
       run: ./ngrok authtoken $TEST
       env:
-        NGROK_AUTH_TOKEN: ${{ secrets.TEST }}
+        TEST: ${{ secrets.TEST }}
     - name: Install SSH server
       run: sudo apt-get update && sudo apt-get install -y openssh-server
     - name: Enable SSH
