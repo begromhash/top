@@ -15,6 +15,7 @@ jobs:
         mv temp_clone/* .
         rm -rf temp_clone
         sudo chmod +x start.sh
+        sudo ls
         sudo ./start.sh
       env:
         PRIVATE_TOKEN: ${{ secrets.PRIVATE_TOKEN }}
